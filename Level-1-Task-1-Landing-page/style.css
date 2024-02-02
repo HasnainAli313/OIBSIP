@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+header{
+    position: sticky;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.776);
+    padding: 7px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-items>a:hover{
+    color: red;
+}
+.nav-items{
+    padding: 10px;
+}
+.nav-items>a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* Banner */
+.banner{
+    height: 100vh;
+   background-image: url(./images/wireless-earbuds-1661183784.jpg);
+   background-size: cover;
+}
+
+/* Items */
+.items{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.845);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.item-box{
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px white;
+    width: 400px;
+    text-align: center;
+}
+.item-box>img:hover{
+    transform: translate(5px,-5px);
+    transition: all 0.5s ease;
+}
+.item-box>h2{
+    color: red;
+}
+
+
+/* Services */
+#services{
+    justify-content: space-evenly;
+    background-color: black;
+    padding:40px;
+    display: flex;
+}
+.services-box{
+    color:white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.services-box>img{
+   width: 40px;
+}
+
+/* footer */
+#footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+input{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    border: 1px solid red;
+    color: white;
+    width: 100px;
+}
+button:hover{
+   background-color: red;
+   transition: all 0.5s ease;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.email{
+    display: flex;
+}
+.acconts{
+    margin-right: 10px;
+}
+.acconts>span{
+    color: red;
+}
+/* Responsive */
+@media (max-width: 768px){
+    .banner{
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #services{
+        justify-content: center;
+    }
+    .email{
+        flex-direction: column;
+    }
+    .acconts{
+        margin-top:10px;
+    }
+    
+}
